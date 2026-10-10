@@ -1,0 +1,13 @@
+### Note: DO NOT use quantized model or quantization_bit when merging lora adapters
+
+### model
+model_name_or_path: /mnt/bn/linmingda/ai/open_model/Qwen3.6-27B
+adapter_name_or_path: /mnt/bn/linmingda/ai/tuning_model/gls_sft_20260423_1000_qwen3.6_27b_adapter
+template: qwen3_vl_nothink
+trust_remote_code: true
+
+### export
+export_dir: /mnt/bn/linmingda/ai/tuning_model/gls_sft_20260423_1000_qwen3.6_27b_merged
+export_size: 5
+export_device: cpu  # choices: [cpu, auto]
+export_legacy_format: false
