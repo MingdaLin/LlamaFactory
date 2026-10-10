@@ -13,4 +13,4 @@
 
 40 个 YAML 均可解析，6 个 Shell 脚本均通过 `bash -n`，复制文件 SHA-256 与源文件一致，训练配置引用的数据集均已登记、模板均可在当前上游找到。验证未启动训练或模型合并，模型、训练样本和原环境依赖需要运行时另行准备。配置保留原环境路径，实际运行前需核对模型、数据、脚本依赖以及输出位置。
 
-本次未复制原始训练数据、权重、生成的 `.runtime/` 配置、环境文件及凭证。逐文件路径和哈希清单保存在 workspace 的 `workdata/LlamaFactory/fork-sync-20261010/sync-verification.json`。配置已提交并推送至个人 fork 的 `codex/sync-local-changes-20261010` 分支，[PR #1](https://github.com/MingdaLin/LlamaFactory/pull/1) 待合入 `main`。
+本次未复制原始训练数据、权重、生成的 `.runtime/` 配置、环境文件及凭证。逐文件路径和哈希清单保存在 workspace 的 `workdata/LlamaFactory/fork-sync-20261010/sync-verification.json`。配置已通过 [PR #1](https://github.com/MingdaLin/LlamaFactory/pull/1) 合入个人 fork 的 `main`；今后按用户要求直接维护 `main`，不创建 PR。
